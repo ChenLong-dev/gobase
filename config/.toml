@@ -1,0 +1,59 @@
+# 这是一份配置文件示例，根据业务不断完善
+
+#dev | test | beta | prod，应用运行模式
+AppMode = "dev"
+
+# Http 服务端口配置
+[Http]
+Host = "127.0.0.1"
+Port = ""
+PreFix = ""
+
+# gRPC 服务端口配置
+[GRPC]
+Host = "127.0.0.1"
+Port = ""
+PreFix = ""
+
+# ES 配置
+[Es]
+Host = "127.0.0.1"
+UserName = ""
+Password = ""
+Index = ""
+
+# ETCD 配置
+[Etcd]
+Hosts = [ "8001", "8001", "8002" ]
+UserName = ""
+Password = ""
+EtcdCert = ""
+EtcdCertKey = ""
+EtcdCa = ""
+
+# MongoDB配置
+[Mongo]
+Host = "127.0.0.1"
+UserName = ""
+Password = ""
+DbName = ""
+
+# Redis配置
+[Redis]
+Network = "127.0.0.1"
+Host = ""
+Password = ""
+
+# 日志相关配置
+[Log]
+Path = "./server_name/logs.log"
+Level = 2 # 日志级别 [0：All,所有,1:TRACE 跟踪,2:DEBUG 调试,3:INFO 信息,4:WARN 警告,5:ERROR 一般错误,6:FATAL 致命错误]
+MaxSize = 2 # MB
+MaxBackups = 3 #备份个数
+MaxAge = 10 # 保存时间,天
+
+
+# 自定义的扩展配置内容,根据实际情况是否需要
+[Extends]
+ExtCfgStr = "这是字符串"
+ExtCfgInt = 1010
