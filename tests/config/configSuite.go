@@ -30,7 +30,7 @@ func (suite *ConfigTestSuite) SetupTest() {
 		Host:     "mongodb://10.107.30.158:27017",
 		Port:     27017,
 		UserName: "root",
-		Password: "sangfor123",
+		Password: "123",
 		DbName:   "demo",
 		AuthDB:   "admin",
 	}
