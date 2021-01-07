@@ -11,9 +11,10 @@ package tests
 
 // Basic imports
 import (
+	"github.com/ChenLong-dev/gobase/tests/config"
 	"github.com/stretchr/testify/suite"
 	"testing"
-	"tests/config"
+	//"tests/config"
 )
 
 func TestConfigTestSuite(t *testing.T) {

@@ -16,7 +16,6 @@ import (
 	"github.com/ChenLong-dev/gobase/config"
 	"github.com/ChenLong-dev/gobase/etcd"
 	"github.com/ChenLong-dev/gobase/mlog"
-	"github.com/ChenLong-dev/gobase/onfig"
 	rds "github.com/go-redis/redis/v8"
 )
 
